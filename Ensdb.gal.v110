@@ -1,0 +1,13 @@
+#############Locally build 'Ensdb.gallus.v110' using the Ensembldb package and the GTF file.
+library(ensembldb)
+## the GTF file can be downloaded from
+gtf <- "Gallus_gallus.bGalGal1.mat.broiler.GRCg7b.110.gtf.gz"
+## generate the SQLite database file
+DB <- ensDbFromGtf(gtf = gtf)
+## load the DB file directly
+ppp <- EnsDb(DB)
+## alternatively, build the annotation package
+## and finally we can generate the package
+makeEnsembldbPackage(ensdb = ppp, version = "0.99.12",
+                     maintainer = "Haixu Jiang <jhxghost@163.com>",
+                     author = "Haixu Jiang")
