@@ -1,0 +1,5 @@
+https://ftp.ensembl.org/pub/release-110/gtf/
+#Search for the corresponding species' GTF file on the above-mentioned website.
+wget https://ftp.ensembl.org/pub/release-110/gtf/gallus_gallus/Gallus_gallus.bGalGal1.mat.broiler.GRCg7b.110.gtf.gz
+Gallus_gallus.bGalGal1.mat.broiler.GRCg7b.110.gtf.gz
+
